@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KiddoPlay — игры и занятия для детей</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; }
+  .gradient-text {
+    background: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero-bg {
+    background: radial-gradient(circle at 20% 20%, #fef3c7 0%, transparent 50%),
+                radial-gradient(circle at 80% 60%, #fce7f3 0%, transparent 50%),
+                linear-gradient(180deg, #fffbeb 0%, #ffffff 100%);
+  }
+</style>
+</head>
+<body class="bg-white text-slate-800">
+
+<!-- Header -->
+<header class="sticky top-0 z-10 bg-white/90 backdrop-blur border-b border-orange-100">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+    <a href="#" class="flex items-center gap-2 font-extrabold text-2xl">
+      <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-white text-lg">K</span>
+      <span class="gradient-text">KiddoPlay</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-slate-600 font-medium">
+      <a href="#how" class="hover:text-pink-500 transition">Как работает</a>
+      <a href="#pricing" class="hover:text-pink-500 transition">Тарифы</a>
+    </nav>
+    <a href="#apply" class="bg-gradient-to-r from-orange-400 to-pink-500 text-white font-semibold px-5 py-2.5 rounded-full shadow-lg shadow-pink-200 hover:scale-105 transition">Оформить</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero-bg">
+  <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-block bg-orange-100 text-orange-600 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">Игры и занятия для детей 2–10 лет</span>
+      <h1 class="text-5xl font-extrabold leading-tight mb-6">
+        Игры и занятия <span class="gradient-text">по возрасту</span> — моторика, логика, творчество
+      </h1>
+      <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+        Каждую неделю — готовый план занятий, подобранный под возраст вашего ребёнка. Без бесконечного поиска идей — просто играйте и развивайтесь вместе.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#apply" class="bg-gradient-to-r from-orange-400 to-pink-500 text-white font-semibold px-7 py-3.5 rounded-full shadow-lg shadow-pink-200 hover:scale-105 transition">Получить план занятий</a>
+        <a href="#pricing" class="bg-white text-slate-700 font-semibold px-7 py-3.5 rounded-full border-2 border-orange-200 hover:border-pink-300 hover:text-pink-500 transition">Смотреть тарифы</a>
+      </div>
+    </div>
+
+    <!-- SVG illustration: blocks + stars + pencil -->
+    <div class="flex justify-center">
+      <svg width="420" height="380" viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кубики, звёздочки и карандаш">
+        <defs>
+          <linearGradient id="gBlock1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fb923c"/><stop offset="100%" stop-color="#f97316"/>
+          </linearGradient>
+          <linearGradient id="gBlock2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f472b6"/><stop offset="100%" stop-color="#ec4899"/>
+          </linearGradient>
+          <linearGradient id="gBlock3" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#8b5cf6"/>
+          </linearGradient>
+          <linearGradient id="gStar" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fde047"/><stop offset="100%" stop-color="#facc15"/>
+          </linearGradient>
+          <linearGradient id="gPencil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#10b981"/>
+          </linearGradient>
+        </defs>
+
+        <!-- ground shadow -->
+        <ellipse cx="210" cy="345" rx="170" ry="22" fill="#fef3c7"/>
+
+        <!-- big blocks -->
+        <g>
+          <rect x="90" y="220" width="120" height="120" rx="16" fill="url(#gBlock1)"/>
+          <rect x="105" y="235" width="38" height="38" rx="10" fill="#ffffff" opacity="0.35"/>
+          <rect x="157" y="235" width="38" height="38" rx="10" fill="#ffffff" opacity="0.35"/>
+          <rect x="105" y="287" width="38" height="38" rx="10" fill="#ffffff" opacity="0.35"/>
+          <rect x="157" y="287" width="38" height="38" rx="10" fill="#ffffff" opacity="0.2"/>
+        </g>
+        <g>
+          <rect x="220" y="240" width="95" height="100" rx="14" fill="url(#gBlock2)"/>
+          <circle cx="255" cy="275" r="16" fill="#ffffff" opacity="0.35"/>
+          <circle cx="285" cy="305" r="16" fill="#ffffff" opacity="0.3"/>
+        </g>
+        <g>
+          <rect x="160" y="150" width="80" height="80" rx="12" fill="url(#gBlock3)"/>
+          <path d="M200 168 L228 212 H172 Z" fill="#ffffff" opacity="0.35"/>
+        </g>
+
+        <!-- pencil -->
+        <g transform="rotate(25 340 180)">
+          <rect x="320" y="90" width="34" height="140" rx="8" fill="url(#gPencil)"/>
+          <rect x="320" y="90" width="34" height="24" rx="8" fill="#f472b6"/>
+          <rect x="320" y="114" width="34" height="10" fill="#fbbf24"/>
+          <polygon points="320,230 354,230 337,268" fill="#fcd9b8"/>
+          <polygon points="331,230 343,230 337,250" fill="#475569"/>
+        </g>
+
+        <!-- stars -->
+        <path d="M70 90 l8 18 20 2 -15 13 5 20 -18 -11 -18 11 5 -20 -15 -13 20 -2 z" fill="url(#gStar)"/>
+        <path d="M330 55 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2 z" fill="url(#gStar)" opacity="0.9"/>
+        <path d="M250 40 l4 10 11 1 -8 7 2 11 -9 -6 -9 6 2 -11 -8 -7 11 -1 z" fill="url(#gStar)" opacity="0.8"/>
+        <circle cx="130" cy="60" r="6" fill="#a78bfa" opacity="0.6"/>
+        <circle cx="380" cy="150" r="7" fill="#f472b6" opacity="0.5"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section id="how" class="max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-4xl font-extrabold text-center mb-3">Как это работает</h2>
+  <p class="text-center text-slate-500 mb-12 text-lg">Три простых шага — и занятия готовы</p>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-orange-50 rounded-3xl p-8 border border-orange-100 hover:shadow-xl transition">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-400 to-amber-400 text-white flex items-center justify-center text-2xl font-extrabold mb-5">1</div>
+      <h3 class="text-xl font-bold mb-3">Оставьте заявку</h3>
+      <p class="text-slate-600 leading-relaxed">Расскажите нам возраст ребёнка и выберите удобный тариф. Это займёт пару минут.</p>
+    </div>
+    <div class="bg-pink-50 rounded-3xl p-8 border border-pink-100 hover:shadow-xl transition">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-400 to-rose-400 text-white flex items-center justify-center text-2xl font-extrabold mb-5">2</div>
+      <h3 class="text-xl font-bold mb-3">Получите персональный план</h3>
+      <p class="text-slate-600 leading-relaxed">Подберём игры по моторике, логике и творчеству, которые подходят именно вашему возрасту.</p>
+    </div>
+    <div class="bg-violet-50 rounded-3xl p-8 border border-violet-100 hover:shadow-xl transition">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-400 to-purple-400 text-white flex items-center justify-center text-2xl font-extrabold mb-5">3</div>
+      <h3 class="text-xl font-bold mb-3">Играйте и развивайтесь</h3>
+      <p class="text-slate-600 leading-relaxed">Новые занятия приходят каждую неделю. Всё из подручных материалов, без сложных покупок.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="bg-gradient-to-b from-orange-50 to-pink-50 py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-extrabold text-center mb-3">Тарифы</h2>
+    <p class="text-center text-slate-500 mb-12 text-lg">Выберите подходящий вариант для вашей семьи</p>
+    <div class="grid md:grid-cols-3 gap-8 items-stretch">
+
+      <!-- Start -->
+      <div class="bg-white rounded-3xl p-8 border border-orange-100 shadow-sm flex flex-col hover:shadow-xl transition">
+        <h3 class="text-2xl font-extrabold text-orange-500 mb-2">Start</h3>
+        <p class="text-slate-500 mb-6">Для первого знакомства</p>
+        <div class="mb-6"><span class="text-5xl font-extrabold">490</span> <span class="text-slate-500">₽/мес</span></div>
+        <ul class="space-y-3 text-slate-600 mb-8 flex-1">
+          <li class="flex gap-3"><span class="text-orange-500 font-bold">✓</span>4 занятия в месяц</li>
+          <li class="flex gap-3"><span class="text-orange-500 font-bold">✓</span>Игры на мелкую моторику</li>
+          <li class="flex gap-3"><span class="text-orange-500 font-bold">✓</span>Простые логические задачки</li>
+          <li class="flex gap-3"><span class="text-orange-500 font-bold">✓</span>Материалы из подручных средств</li>
+        </ul>
+        <a href="#apply" class="block text-center border-2 border-orange-400 text-orange-500 font-semibold py-3 rounded-full hover:bg-orange-400 hover:text-white transition">Выбрать</a>
+      </div>
+
+      <!-- Plus -->
+      <div class="bg-white rounded-3xl p-8 border-2 border-pink-400 shadow-xl shadow-pink-200 flex flex-col relative md:scale-105">
+        <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-pink-500 to-rose-400 text-white text-sm font-semibold px-5 py-1.5 rounded-full">Популярный</span>
+        <h3 class="text-2xl font-extrabold text-pink-500 mb-2">Plus</h3>
+        <p class="text-slate-500 mb-6">Оптимальный баланс</p>
+        <div class="mb-6"><span class="text-5xl font-extrabold">890</span> <span class="text-slate-500">₽/мес</span></div>
+        <ul class="space-y-3 text-slate-600 mb-8 flex-1">
+          <li class="flex gap-3"><span class="text-pink-500 font-bold">✓</span>8 занятий в месяц</li>
+          <li class="flex gap-3"><span class="text-pink-500 font-bold">✓</span>Моторика + логика + творчество</li>
+          <li class="flex gap-3"><span class="text-pink-500 font-bold">✓</span>Печатные шаблоны к занятиям</li>
+          <li class="flex gap-3"><span class="text-pink-500 font-bold">✓</span>Поддержка куратора в чате</li>
+        </ul>
+        <a href="#apply" class="block text-center bg-gradient-to-r from-pink-500 to-rose-400 text-white font-semibold py-3 rounded-full shadow-lg hover:scale-105 transition">Выбрать</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="bg-white rounded-3xl p-8 border border-violet-100 shadow-sm flex flex-col hover:shadow-xl transition">
+        <h3 class="text-2xl font-extrabold text-violet-500 mb-2">Pro</h3>
+        <p class="text-slate-500 mb-6">Максимум развития</p>
+        <div class="mb-6"><span class="text-5xl font-extrabold">1 490</span> <span class="text-slate-500">₽/мес</span></div>
+        <ul class="space-y-3 text-slate-600 mb-8 flex-1">
+          <li class="flex gap-3"><span class="text-violet-500 font-bold">✓</span>12 занятий в месяц</li>
+          <li class="flex gap-3"><span class="text-violet-500 font-bold">✓</span>Всё из тарифа Plus</li>
+          <li class="flex gap-3"><span class="text-violet-500 font-bold">✓</span>Индивидуальная программа</li>
+          <li class="flex gap-3"><span class="text-violet-500 font-bold">✓</span>Личная консультация педагога</li>
+        </ul>
+        <a href="#apply" class="block text-center border-2 border-violet-400 text-violet-500 font-semibold py-3 rounded-full hover:bg-violet-400 hover:text-white transition">Выбрать</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Application form -->
+<section id="apply" class="max-w-3xl mx-auto px-6 py-20">
+  <h2 class="text-4xl font-extrabold text-center mb-3">Оформление заявки</h2>
+  <p class="text-center text-slate-500 mb-10 text-lg">Оставьте контакты — мы подберём план занятий под возраст вашего ребёнка</p>
+  <form id="applyForm" class="bg-gradient-to-b from-orange-50 to-pink-50 border border-orange-100 rounded-3xl p-10 shadow-lg space-y-6" novalidate>
+    <div>
+      <label for="name" class="block font-semibold mb-2">Имя</label>
+      <input type="text" id="name" placeholder="Как вас зовут?" class="w-full rounded-xl border border-orange-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-pink-300 transition">
+    </div>
+    <div>
+      <label for="phone" class="block font-semibold mb-2">Телефон</label>
+      <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" class="w-full rounded-xl border border-orange-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-pink-300 transition">
+    </div>
+    <div>
+      <label for="tariff" class="block font-semibold mb-2">Тариф</label>
+      <select id="tariff" class="w-full rounded-xl border border-orange-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-pink-300 transition">
+        <option value="">— Выберите тариф —</option>
+        <option value="start">Start — 490 ₽/мес</option>
+        <option value="plus">Plus — 890 ₽/мес</option>
+        <option value="pro">Pro — 1 490 ₽/мес</option>
+      </select>
+    </div>
+    <div>
+      <label for="comment" class="block font-semibold mb-2">Комментарий <span class="text-slate-400 font-normal">(необязательно)</span></label>
+      <textarea id="comment" rows="3" placeholder="Возраст ребёнка, интересы, пожелания…" class="w-full rounded-xl border border-orange-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-pink-300 transition"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-gradient-to-r from-orange-400 to-pink-500 text-white text-lg font-semibold py-4 rounded-full shadow-lg shadow-pink-200 hover:scale-[1.02] transition">Получить план занятий</button>
+    <p class="text-xs text-slate-400 text-center leading-relaxed">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных. Сервис носит информационный характер и не заменяет консультацию специалиста.</p>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400">
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p>© 2026 KiddoPlay. Все права защищены.</p>
+    <div class="flex gap-8">
+      <a href="#" class="hover:text-white transition">Политика конфиденциальности</a>
+      <a href="#" class="hover:text-white transition">Публичная оферта</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('applyForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var phone = document.getElementById('phone').value.trim();
+    var tariff = document.getElementById('tariff').value;
+    if (name && phone && tariff) {
+      alert("Готово! Мы свяжемся и уточним возраст ребёнка.");
+      this.reset();
+    } else {
+      alert("Заполните имя, телефон и выберите тариф.");
+    }
+  });
+</script>
+
+</body>
+</html>
